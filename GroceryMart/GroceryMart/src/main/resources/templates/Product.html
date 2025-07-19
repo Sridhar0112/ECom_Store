@@ -10,7 +10,6 @@
     <div class="container-fluid bg-primary p-4 mt-5 ">
         <div class="row">
             <div class="col-md-8 offset-md-2">
-                <form>
                     <div class="input-group">
                         <input type="text" class="form-control" name="ch">
                         <button class="btn btn-light text-dark ms-3 col-md-2">
@@ -29,11 +28,14 @@
 
             <div class="col-md-2 p-0">
 
-                <div class="card shadow-sm p-0 mb-5 bg-body-tertiary rounded">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
                     <div class="card-body">
                         <div class="list-group">
-                            <p class="fs-5">Category</p>
-
+                            <a href="#" class="list-group-item list-group-item-action active">Category</a>
+                            <a href="#" class="list-group-item list-group-item-action">Electronics</a>
+                            <a href="#" class="list-group-item list-group-item-action">Mobile Phone</a>
+                            <a href="#" class="list-group-item list-group-item-action">Clothes</a>
+                            <a href="#" class="list-group-item list-group-item-action">Perfumes</a>
                         </div>
                     </div>
                 </div>
@@ -41,34 +43,131 @@
             <div class="col-md-10">
                 <div class="card">
                     <div class="card-body">
-                        <p class="fs-3 text-center">Products</p>
+                        <p class="fs-3 text-center" style="font-size:25px; font-weight:bolder">Products</p>
                         <div class="row">
-
-
-                                <div class="col-md-3 mt-2" th:each="p:${products}">
+                                <div class="col-md-3 mt-2" >
                                     <div class="card card-sh">
                                         <div class="card-body text-center">
+                                            <img src="/img/product_img/laptop.jpg" width="100%" height="150px">
+                                            <p class="fs-5 text-center" style="font-size:17px; font-weight:600">laptop</p>
+                                            <div class="row text-center" style="justify-content:center">
+                                               <b> <p class="fs-6 fw-bold" style="font-size:16px; font-weight:500">&#8377;  500
 
-                                            <p class="fs-5 text-center">[[${p.title}]]</p>
-                                            <div class="row text-center">
-                                                <p class="fs-6 fw-bold ">
-
-                                                </p>
-
+                                                <span class="text-success">20% Off</span></b></p>
+                                                <a href="/api/viewProduct" class="btn btn-primary" style="width:100%; font-size:16px; color:white; font-weight:500">View Details</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+<!--                                Static part as of now-->
+                            <div class="col-md-3 mt-2" >
+                                <div class="card card-sh">
+                                    <div class="card-body text-center">
+                                        <img src="/img/product_img/laptop.jpg" width="100%" height="150px">
+                                        <p class="fs-5 text-center" style="font-size:17px; font-weight:600">laptop</p>
+                                        <div class="row text-center" style="justify-content:center">
+                                            <b> <p class="fs-6 fw-bold" style="font-size:16px; font-weight:500">&#8377;  500
 
+                                                <span class="text-success">20% Off</span></b></p>
+                                            <a class="btn btn-primary" style="width:100%; font-size:16px; color:white; font-weight:500">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-2" >
+                                <div class="card card-sh">
+                                    <div class="card-body text-center">
+                                        <img src="/img/product_img/laptop.jpg" width="100%" height="150px">
+                                        <p class="fs-5 text-center" style="font-size:17px; font-weight:600">laptop</p>
+                                        <div class="row text-center" style="justify-content:center">
+                                            <b> <p class="fs-6 fw-bold" style="font-size:16px; font-weight:500">&#8377;  500
+
+                                                <span class="text-success">20% Off</span></b></p>
+                                            <a class="btn btn-primary" style="width:100%; font-size:16px; color:white; font-weight:500">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-2" >
+                                <div class="card card-sh">
+                                    <div class="card-body text-center">
+                                        <img src="/img/product_img/laptop.jpg" width="100%" height="150px">
+                                        <p class="fs-5 text-center" style="font-size:17px; font-weight:600">laptop</p>
+                                        <div class="row text-center" style="justify-content:center">
+                                            <b> <p class="fs-6 fw-bold" style="font-size:16px; font-weight:500">&#8377;  500
+
+                                                <span class="text-success">20% Off</span></b></p>
+                                            <a class="btn btn-primary" style="width:100%; font-size:16px; color:white; font-weight:500">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-2" >
+                                <div class="card card-sh">
+                                    <div class="card-body text-center">
+                                        <img src="/img/product_img/laptop.jpg" width="100%" height="150px">
+                                        <p class="fs-5 text-center" style="font-size:17px; font-weight:600">laptop</p>
+                                        <div class="row text-center" style="justify-content:center">
+                                            <b> <p class="fs-6 fw-bold" style="font-size:16px; font-weight:500">&#8377;  500
+
+                                                <span class="text-success">20% Off</span></b></p>
+                                            <a class="btn btn-primary" style="width:100%; font-size:16px; color:white; font-weight:500">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-2" >
+                                <div class="card card-sh">
+                                    <div class="card-body text-center">
+                                        <img src="/img/product_img/laptop.jpg" width="100%" height="150px">
+                                        <p class="fs-5 text-center" style="font-size:17px; font-weight:600">laptop</p>
+                                        <div class="row text-center" style="justify-content:center">
+                                            <b> <p class="fs-6 fw-bold" style="font-size:16px; font-weight:500">&#8377;  500
+
+                                                <span class="text-success">20% Off</span></b></p>
+                                            <a class="btn btn-primary" style="width:100%; font-size:16px; color:white; font-weight:500">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-2" >
+                                <div class="card card-sh">
+                                    <div class="card-body text-center">
+                                        <img src="/img/product_img/laptop.jpg" width="100%" height="150px">
+                                        <p class="fs-5 text-center" style="font-size:17px; font-weight:600">laptop</p>
+                                        <div class="row text-center" style="justify-content:center">
+                                            <b> <p class="fs-6 fw-bold" style="font-size:16px; font-weight:500">&#8377;  500
+
+                                                <span class="text-success">20% Off</span></b></p>
+                                            <a class="btn btn-primary" style="width:100%; font-size:16px; color:white; font-weight:500">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-2" >
+                                <div class="card card-sh">
+                                    <div class="card-body text-center">
+                                        <img src="/img/product_img/laptop.jpg" width="100%" height="150px">
+                                        <p class="fs-5 text-center" style="font-size:17px; font-weight:600">laptop</p>
+                                        <div class="row text-center" style="justify-content:center">
+                                            <b> <p class="fs-6 fw-bold" style="font-size:16px; font-weight:500">&#8377;  500
+
+                                                <span class="text-success">20% Off</span></b></p>
+                                            <a class="btn btn-primary" style="width:100%; font-size:16px; color:white; font-weight:500">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+<!--                            End of the static part-->
                         </div>
 
                     </div>
                 </div>
                 <!-- Start Pagination -->
                 <div class="row">
-                    <div class="col-md-4">Total Products : [[${totalElements}]]</div>
+                    <div class="col-md-4">Total Products :</div>
                     <div class="col-md-6">
-                        <th:block th:if="${productsSize>0}">
+
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination">
 

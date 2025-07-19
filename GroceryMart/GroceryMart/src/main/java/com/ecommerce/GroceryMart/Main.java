@@ -26,4 +26,8 @@ public class Main {
     public  String products(){
         return "Product";
     }
+    @GetMapping("/viewProduct")
+    public String View_products(){
+        return "view_product.html";
+    }
 }
