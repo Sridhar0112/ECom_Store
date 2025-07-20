@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Controller
 
-@RequestMapping("/api")
+@RequestMapping("/user")
 public class Main {
 
     @GetMapping("/")
